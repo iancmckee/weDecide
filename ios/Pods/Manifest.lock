@@ -1,10 +1,14 @@
 PODS:
+  - A0Auth0 (2.7.0):
+    - React
   - boost-for-react-native (1.63.0)
   - DoubleConversion (1.1.6)
   - EXApplication (2.4.1):
     - UMCore
   - EXConstants (9.3.5):
     - UMConstantsInterface
+    - UMCore
+  - EXCrypto (8.4.0):
     - UMCore
   - EXErrorRecovery (1.4.0):
     - UMCore
@@ -29,6 +33,8 @@ PODS:
   - EXPermissions (10.0.0):
     - UMCore
     - UMPermissionsInterface
+  - EXRandom (10.0.0):
+    - React-Core
   - EXSecureStore (9.3.0):
     - UMCore
   - EXSplashScreen (0.8.1):
@@ -39,6 +45,8 @@ PODS:
     - UMFileSystemInterface
   - EXUpdates (0.4.2):
     - React-Core
+    - UMCore
+  - EXWebBrowser (8.6.0):
     - UMCore
   - FBLazyVector (0.63.4)
   - FBReactNativeSpec (0.63.4):
@@ -310,9 +318,11 @@ PODS:
   - Yoga (1.14.0)
 
 DEPENDENCIES:
+  - A0Auth0 (from `../node_modules/react-native-auth0/ios`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - EXApplication (from `../node_modules/expo-application/ios`)
   - EXConstants (from `../node_modules/expo-constants/ios`)
+  - EXCrypto (from `../node_modules/expo-crypto/ios`)
   - EXErrorRecovery (from `../node_modules/expo-error-recovery/ios`)
   - EXFileSystem (from `../node_modules/expo-file-system/ios`)
   - EXFont (from `../node_modules/expo-font/ios`)
@@ -321,10 +331,12 @@ DEPENDENCIES:
   - EXLinearGradient (from `../node_modules/expo-linear-gradient/ios`)
   - EXLocation (from `../node_modules/expo-location/ios`)
   - EXPermissions (from `../node_modules/expo-permissions/ios`)
+  - EXRandom (from `../node_modules/expo-random/ios`)
   - EXSecureStore (from `../node_modules/expo-secure-store/ios`)
   - EXSplashScreen (from `../node_modules/expo-splash-screen/ios`)
   - EXSQLite (from `../node_modules/expo-sqlite/ios`)
   - EXUpdates (from `../node_modules/expo-updates/ios`)
+  - EXWebBrowser (from `../node_modules/expo-web-browser/ios`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/Libraries/FBReactNativeSpec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
@@ -374,12 +386,16 @@ SPEC REPOS:
     - boost-for-react-native
 
 EXTERNAL SOURCES:
+  A0Auth0:
+    :path: "../node_modules/react-native-auth0/ios"
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   EXApplication:
     :path: "../node_modules/expo-application/ios"
   EXConstants:
     :path: "../node_modules/expo-constants/ios"
+  EXCrypto:
+    :path: "../node_modules/expo-crypto/ios"
   EXErrorRecovery:
     :path: "../node_modules/expo-error-recovery/ios"
   EXFileSystem:
@@ -396,6 +412,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-location/ios"
   EXPermissions:
     :path: "../node_modules/expo-permissions/ios"
+  EXRandom:
+    :path: "../node_modules/expo-random/ios"
   EXSecureStore:
     :path: "../node_modules/expo-secure-store/ios"
   EXSplashScreen:
@@ -404,6 +422,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-sqlite/ios"
   EXUpdates:
     :path: "../node_modules/expo-updates/ios"
+  EXWebBrowser:
+    :path: "../node_modules/expo-web-browser/ios"
   FBLazyVector:
     :path: "../node_modules/react-native/Libraries/FBLazyVector"
   FBReactNativeSpec:
@@ -488,10 +508,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  A0Auth0: d8dfb271aead73b19cb30910e7dbe77b03c03633
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: cde416483dac037923206447da6e1454df403714
   EXApplication: b61d007b4f23ab6aa3d7fe1f517ffd81ed962749
   EXConstants: 5874c3bf65601ce96049412e6e5f43d198c1cdaf
+  EXCrypto: 069dd646f69216e497d95704cdff4613d7969aba
   EXErrorRecovery: 595048e4ae93a70716b195f2ebc1849d63e0ee3f
   EXFileSystem: 7c4397042d9a3ae47e6c53c0ce0229d4b4204851
   EXFont: 0f005a50e7d6d30b61e4680069c4025b9feeffe4
@@ -500,10 +522,12 @@ SPEC CHECKSUMS:
   EXLinearGradient: e082a9b5ec21532b98acba28ee988f9e70b50119
   EXLocation: 5689bbf163581eefb70978130611ec25d027bcf3
   EXPermissions: 55cadfd11547c07a5390ba7eea63bd998a71018d
+  EXRandom: 7da44452b73fe1083b343ce2f24c440f6ad7fa04
   EXSecureStore: 7cda998bd7c150b28021cb9c85b0747daa6a5ab5
   EXSplashScreen: 5bd1d445b1c5fc883fa2f5612633defc48759273
   EXSQLite: 98f4062e567a2facc80aa6a064be88fa1a9476b6
   EXUpdates: 060bc885bc697acaf3b0a4606508ce909d91571d
+  EXWebBrowser: 3f399979a5514f6efac7b41ae00ac71a61defb90
   FBLazyVector: 3bb422f41b18121b71783a905c10e58606f7dc3e
   FBReactNativeSpec: f2c97f2529dd79c083355182cc158c9f98f4bd6e
   Folly: b73c3869541e86821df3c387eb0af5f65addfab4

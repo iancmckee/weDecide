@@ -1,7 +1,1 @@
-// Copyright 2018-present 650 Industries. All rights reserved.
-
-@protocol UMAppRecordInterface <NSObject>
-
-- (void)invalidate;
-
-@end
+../../../../../node_modules/unimodules-app-loader/ios/UMAppLoader/Interfaces/UMAppRecordInterface.h

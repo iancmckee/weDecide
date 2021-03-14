@@ -1,18 +1,1 @@
-// Copyright 2015-present 650 Industries. All rights reserved.
-
-#import <EXFileSystem/EXSessionDownloadTaskDelegate.h>
-#import <EXFileSystem/EXResumablesManager.h>
-
-typedef void (^EXDownloadDelegateOnWriteCallback)(NSURLSessionDownloadTask *task, int64_t bytesWritten, int64_t totalBytesWritten, int64_t totalBytesExpectedToWrite);
-
-@interface EXSessionResumableDownloadTaskDelegate : EXSessionDownloadTaskDelegate
-
-- (instancetype)initWithResolve:(UMPromiseResolveBlock)resolve
-                         reject:(UMPromiseRejectBlock)reject
-                       localUrl:(NSURL *)localUrl
-             shouldCalculateMd5:(BOOL)shouldCalculateMd5
-                onWriteCallback:(EXDownloadDelegateOnWriteCallback)onWriteCallback
-               resumableManager:(EXResumablesManager *)manager
-                           uuid:(NSString *)uuid;
-
-@end
+../../../../../node_modules/expo-file-system/ios/EXFileSystem/EXSessionTasks/EXSessionResumableDownloadTaskDelegate.h
