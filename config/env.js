@@ -1,7 +1,9 @@
-import { TESTING, AUTH0_CLIENT_ID, AUTH0_DOMAIN } from '@env'
+import { TESTING, AUTH0_CLIENTID, AUTH0_DOMAIN } from '@env'
 
 const dev_Env = {
-    TESTING, AUTH0_CLIENT_ID, AUTH0_DOMAIN
+    clientId:AUTH0_CLIENTID, 
+    domain:AUTH0_DOMAIN,
+    testing: TESTING
 };
 
-export default dev_Env
+export default dev_Env 

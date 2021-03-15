@@ -4,16 +4,9 @@ import * as React from 'react';
 import { Alert, Button, Platform, StyleSheet, Text, View } from 'react-native';
 import envs from '../config/env'
 
-// You need to swap out the Auth0 client id and domain with the one from your Auth0 client.
-// In your Auth0 client, you need to also add a url to your authorized redirect urls.
-//
-// For this application, I added https://auth.expo.io/@arielweinberger/with-auth0 because I am
-// signed in as the 'arielweinberger' account on Expo and the name/slug for this app is 'with-auth0'.
-//
-// You can open this app in the Expo client and check your logs to find out your redirect URL.
-
-const auth0ClientId = envs.AUTH0_CLIENT_ID;
-const authorizationEndpoint = envs.AUTH0_DOMAIN;
+//Need to figure out how to update these when they get updated.
+const auth0ClientId = envs.clientId;
+const authorizationEndpoint = envs.domain;
 
 const useProxy = Platform.select({ web: false, default: true });
 const redirectUri = AuthSession.makeRedirectUri({ useProxy });
@@ -28,7 +21,7 @@ export default function Login() {
       // id_token will return a JWT token
       responseType: 'id_token',
       // retrieve the user's profile
-      scopes: ['openid', 'profile'],
+      scopes: ['openid', 'profile', 'email'],
       extraParams: {
         // ideally, this will be a random value
         nonce: 'nonce',
