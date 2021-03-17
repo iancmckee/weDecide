@@ -6,9 +6,6 @@ import {
   DrawerItemList,
   DrawerItem,
 } from '@react-navigation/drawer';
-import Login from './Login';
-import LoginOut from './LoginOut';
-import Authentication from './Authenticate'
 
 
 function Feed({ navigation }) {
@@ -52,7 +49,6 @@ export default function MyDrawer() {
     <Drawer.Navigator drawerContent={props => <CustomDrawerContent {...props} />}>
       <Drawer.Screen name="Feed" component={Feed} />
       <Drawer.Screen name="Notifications" component={Notifications} />
-      <Drawer.Screen name="Login" component={Login} />
     </Drawer.Navigator>
   );
 }

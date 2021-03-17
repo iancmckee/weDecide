@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "wedecide7caaab0a": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
